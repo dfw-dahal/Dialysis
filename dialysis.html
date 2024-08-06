@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialysis Health Information</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balthazar&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1> <span style="font-family: 'Balthazar'; font-size: 24px;">DEE MEDICAL CENTRE</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#dialysis">About Dialysis</a></li>
+                <li><a href="#health-tips">Health Tips</a></li>
+                <li><a href="#lab-tests">Lab Tests</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-dialysis">
+        <div class="image-text-container">
+            <img src="./WhatsApp Image 2024-08-05 at 20.32.11.jpeg" alt="Dialysis machine" class="section-image" width='400' height="300">
+        </div>
+            <h2>What is Dialysis?</h2>
+            <p>Dialysis is a life-saving treatment for people with kidney failure. It performs the essential functions of the kidneys when they can no longer do so effectively. There are two main types of dialysis:</p>
+            <ul>
+                <li><strong>Hemodialysis:</strong> Blood is pumped out of your body to an artificial kidney machine and returned to your body by tubes that connect you to the machine.</li>
+                <li><strong>Peritoneal Dialysis:</strong> The inside lining of your belly acts as a natural filter. Wastes are taken out by means of a cleansing fluid called dialysate, which is washed in and out of your belly in cycles.</li>
+            </ul>
+            <p>Dialysis helps to:</p>
+            <ul>
+                <li>Remove waste, salt, and extra water to prevent them from building up in the body</li>
+                <li>Keep a safe level of certain chemicals in your blood, such as potassium, sodium, and bicarbonate</li>
+                <li>Help control blood pressure</li>
+            </ul>
+            <p>Living with dialysis requires careful management of diet, fluid intake, and overall health. The following sections provide tips to help you maintain your health while on dialysis.</p>
+        </section>
+
+        <section id="health-tips">
+            <h2>Health Tips for Dialysis Patients</h2>
+            <div class="tip-container">
+                <div class="tip">
+                    <img src="/api/placeholder/150/150" alt="Healthy diet for dialysis patients" class="tip-image"
+                    width="150" height="150">
+                    <h3>Diet</h3>
+                    <ul>
+                        <li>Limit fluid intake</li>
+                        <li>Control potassium and phosphorus intake</li>
+                        <li>Monitor protein consumption</li>
+                        <li>Reduce sodium intake</li>
+                    </ul>
+                </div>
+                <div class="tip">
+                     <img src="/api/placeholder/150/150" alt="Low-impact exercise" class="tip-image"  width="150" height="150">
+                    <h3>Exercise</h3>
+                    <ul>
+                        <li>Engage in low-impact activities</li>
+                        <li>Try walking, swimming, or cycling</li>
+                        <li>Aim for 30 minutes of activity most days</li>
+                        <li>Consult your doctor before starting a new routine</li>
+                    </ul>
+                </div>
+                <div class="tip">
+                    <img src="/api/placeholder/150/150" alt="Mental health support" class="tip-image"  width="150" height="150">
+                    <h3>Mental Well-being</h3>
+                    <ul>
+                        <li>Practice stress-reduction techniques</li>
+                        <li>Join support groups</li>
+                        <li>Maintain social connections</li>
+                        <li>Consider counseling if needed</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab-tests">
+            <h2>Understanding Your Lab Tests</h2>
+            <div id="lab-test-input">
+                <label for="test-select">Select a test:</label>
+                <select id="test-select">
+                    <option value="">Choose a test</option>
+                    <option value="creatinine">Creatinine</option>
+                    <option value="bun">Blood Urea Nitrogen (BUN)</option>
+                    <option value="potassium">Potassium</option>
+                    <option value="phosphorus">Phosphorus</option>
+                </select>
+                <input type="number" id="test-value" placeholder="Enter your result">
+                <button onclick="interpretTest()">Interpret</button>
+            </div>
+            <div id="test-interpretation"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Dialysis Health Information. Consult with your healthcare provider for personalized advice.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
